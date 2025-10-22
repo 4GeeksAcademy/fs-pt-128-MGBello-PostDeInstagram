@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding:0; 
+}
+body{
+    background-color: #000;
+}
+/*Contenedor para centrar el post y dar formatos previos a este*/
+.container{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    margin:0 auto;
+    height: auto;
+    
+}
+/* Caja que va a contener todo lo relacionado con el POST*/
+.post{
+    background-color: #fff;
+    margin: 50px auto;
+    width:500px;
+    height: auto;
+}
+/*Cabecera del POST*/
+.post-header{
+    display: flex;
+    align-items:center;
+    height: auto;
+    width: 100%;
+    padding: 15px 10px;
+}
+/*Definicion de espacios a ocupar por los diferentes divs de la cabecera*/
+.post-header__logo,
+.post-header__menu{
+    width: 10%;
+}
+.post-header__text{
+    width: 80%;
+}
+/*Formato para el texto de la cabecera */
+.post-header__text h1{
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.post-header__text > p{
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+/*Formato para el contenedor de la imagen*/
+.post-image{
+    width: 100%;
+    height: 400px;
+    margin: 0;
+}
+/* Ajuste de tamaño de la imagen asi como 'posicion' de la misma*/
+.post-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+/*Maquetacion del cuerpo que contiene los iconos asi como los textos*/
+.post-body{
+    width: 100%;
+    height: auto;
+
+}
+.post-body__icons{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 15px 10px;
+}
+.rigth{
+    width:90%
+}
+.left{
+    width: 10%;
+    margin-right: 5px;
+}
+.post-body__text{
+    font-family: "Roboto", sans-serif;
+    margin: 15px;
+}
+.like{
+    padding: 10px 0;
+}
+/*Utilizacion de la etiqueta span para matener dos pesos diferentes de tono de párrafo*/
+.like span{
+    font-weight: 600;
+}
